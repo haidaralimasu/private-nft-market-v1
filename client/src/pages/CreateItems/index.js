@@ -91,6 +91,7 @@ const CreateItems = (props) => {
       );
       await resetForm();
     } catch (error) {
+      console.log(error);
       await notifyError("Oops !", "Something went wrong while listing");
       await resetForm();
     }
